@@ -57,6 +57,8 @@ class ComposerStaticInit03abe6605998ab9c0f9767671e68248a
         array (
             'Psy\\' => 4,
             'Psr\\Log\\' => 8,
+            'Prettus\\Validator\\' => 18,
+            'Prettus\\Repository\\' => 19,
             'PhpParser\\' => 10,
         ),
         'M' => 
@@ -85,6 +87,10 @@ class ComposerStaticInit03abe6605998ab9c0f9767671e68248a
             'CodeDelivery\\' => 13,
             'ClassPreloader\\' => 15,
             'Carbon\\' => 7,
+        ),
+        'B' => 
+        array (
+            'Bestmomo\\Scafold\\' => 17,
         ),
     );
 
@@ -183,6 +189,14 @@ class ComposerStaticInit03abe6605998ab9c0f9767671e68248a
         array (
             0 => __DIR__ . '/..' . '/psr/log/Psr/Log',
         ),
+        'Prettus\\Validator\\' => 
+        array (
+            0 => __DIR__ . '/..' . '/prettus/laravel-validation/src/Prettus/Validator',
+        ),
+        'Prettus\\Repository\\' => 
+        array (
+            0 => __DIR__ . '/..' . '/prettus/l5-repository/src/Prettus/Repository',
+        ),
         'PhpParser\\' => 
         array (
             0 => __DIR__ . '/..' . '/nikic/php-parser/lib/PhpParser',
@@ -222,6 +236,10 @@ class ComposerStaticInit03abe6605998ab9c0f9767671e68248a
         'Carbon\\' => 
         array (
             0 => __DIR__ . '/..' . '/nesbot/carbon/src/Carbon',
+        ),
+        'Bestmomo\\Scafold\\' => 
+        array (
+            0 => __DIR__ . '/..' . '/bestmomo/scafold/src',
         ),
     );
 
@@ -273,8 +291,14 @@ class ComposerStaticInit03abe6605998ab9c0f9767671e68248a
     );
 
     public static $classMap = array (
+        'CategoryTableSeeder' => __DIR__ . '/../..' . '/database/seeds/CategoryTableSeeder.php',
+        'ClientTableSeeder' => __DIR__ . '/../..' . '/database/seeds/ClientTableSeeder.php',
         'CreateCategoriesTable' => __DIR__ . '/../..' . '/database/migrations/2017_04_06_041627_create_categories_table.php',
+        'CreateClientsTable' => __DIR__ . '/../..' . '/database/migrations/2017_04_06_080823_create_clients_table.php',
+        'CreateOrderItemsTable' => __DIR__ . '/../..' . '/database/migrations/2017_04_10_182040_create_order_items_table.php',
+        'CreateOrdersTable' => __DIR__ . '/../..' . '/database/migrations/2017_04_10_182008_create_orders_table.php',
         'CreatePasswordResetsTable' => __DIR__ . '/../..' . '/database/migrations/2014_10_12_100000_create_password_resets_table.php',
+        'CreateProductsTable' => __DIR__ . '/../..' . '/database/migrations/2017_04_06_073132_create_products_table.php',
         'CreateUsersTable' => __DIR__ . '/../..' . '/database/migrations/2014_10_12_000000_create_users_table.php',
         'DatabaseSeeder' => __DIR__ . '/../..' . '/database/seeds/DatabaseSeeder.php',
         'File_Iterator' => __DIR__ . '/..' . '/phpunit/php-file-iterator/src/Iterator.php',
@@ -751,6 +775,7 @@ class ComposerStaticInit03abe6605998ab9c0f9767671e68248a
         'PHP_Token_XOR_EQUAL' => __DIR__ . '/..' . '/phpunit/php-token-stream/src/Token.php',
         'PHP_Token_YIELD' => __DIR__ . '/..' . '/phpunit/php-token-stream/src/Token.php',
         'PHP_Token_YIELD_FROM' => __DIR__ . '/..' . '/phpunit/php-token-stream/src/Token.php',
+        'ProductTableSeeder' => __DIR__ . '/../..' . '/database/seeds/ProductTableSeeder.php',
         'SebastianBergmann\\Comparator\\ArrayComparator' => __DIR__ . '/..' . '/sebastian/comparator/src/ArrayComparator.php',
         'SebastianBergmann\\Comparator\\Comparator' => __DIR__ . '/..' . '/sebastian/comparator/src/Comparator.php',
         'SebastianBergmann\\Comparator\\ComparisonFailure' => __DIR__ . '/..' . '/sebastian/comparator/src/ComparisonFailure.php',
@@ -790,6 +815,7 @@ class ComposerStaticInit03abe6605998ab9c0f9767671e68248a
         'SessionHandlerInterface' => __DIR__ . '/..' . '/symfony/http-foundation/Resources/stubs/SessionHandlerInterface.php',
         'TestCase' => __DIR__ . '/../..' . '/tests/TestCase.php',
         'Text_Template' => __DIR__ . '/..' . '/phpunit/php-text-template/src/Template.php',
+        'UserTableSeeder' => __DIR__ . '/../..' . '/database/seeds/UserTableSeeder.php',
     );
 
     public static function getInitializer(ClassLoader $loader)
