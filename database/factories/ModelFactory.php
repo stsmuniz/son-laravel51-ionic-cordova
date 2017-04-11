@@ -34,14 +34,21 @@ $factory->define(\CodeDelivery\Models\Product::class, function (\Faker\Generator
     ];
 });
 
-$factory->define(\CodeDelivery\Models\Order::class, function (\Faker\Generator $faker) {
+$factory->define(\CodeDelivery\Models\Order::class, function () {
     return [
         'client_id' => rand(1, 10),
-        'user_deliveryman_id' => '',
-        'total' => $faker->numberBetween(50, 100),
+        'user_deliveryman_id' => null,
+        'total' => rand(50, 100),
         'status' => 0
     ];
 });
+
+$factory->define(\CodeDelivery\Models\OrderItem::class, function () {
+    return [
+    ];
+});
+
+
 
 $factory->define(CodeDelivery\Models\Client::class, function (Faker\Generator $faker) {
     return [
