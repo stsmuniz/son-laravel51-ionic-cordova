@@ -25,6 +25,10 @@ class ProductRepositoryEloquent extends BaseRepository implements ProductReposit
     }
 
 
+    public function listWithPrice()
+    {
+        return $this->model->get(['id', 'name', 'price']);
+    }
 
     /**
      * Boot up the repository, pushing criteria

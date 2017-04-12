@@ -59,3 +59,12 @@ Route::group(['prefix' => 'admin', 'middleware' => 'auth.checkrole', 'as' => 'ad
         Route::post('update/{id}', ['uses' => 'CuponsController@update', 'as' => 'update']);
     });
 });
+
+Route::group(['prefix' => 'customer', 'as' => 'customer.', 'middleware' => 'auth.checkrole:client'], function() {
+
+    Route::group(['prefix' => 'order', 'as' => 'order.'], function () {
+        Route::get('/', ['as' => 'index', 'uses' => 'CheckoutController@index']);
+        Route::get('create', ['as' => 'create', 'uses' => 'CheckoutController@create']);
+        Route::post('store', ['as' => 'store', 'uses' => 'CheckoutController@store']);
+    });
+});
