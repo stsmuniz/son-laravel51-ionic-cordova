@@ -84,13 +84,11 @@ Route::group(['prefix' => 'api', 'middleware' => 'oauth', 'as' => 'api.'], funct
     });
 
     Route::group(['prefix' => 'deliveryman','middleware' => 'oauth.checkrole:deliveryman', 'as' => 'deliveryman.'], function() {
-        Route::get('pedidos', function() {
-            return [
-                'id' => 1,
-                'client' => 'Salustiano - Entregador',
-                'total' => 10
-            ];
-        });
+
+        Route::resource('order',
+            'Api\Deliveryman\DeliverymanCheckoutController', [
+                'except' => ['create', 'edit', 'destroy', 'store']
+            ]);
     });
 });
 

@@ -14,6 +14,14 @@ use CodeDelivery\Validators\OrderValidator;
  */
 class OrderRepositoryEloquent extends BaseRepository implements OrderRepository
 {
+    public function getByIdAndDeliveryman($id, $deliverymanId)
+    {
+        $result = $this->findWhere([
+            'id' => $id,
+            'user_deliveryman_id' => $deliverymanId
+        ]);
+    }
+
     /**
      * Specify Model class name
      *
