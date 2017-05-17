@@ -75,6 +75,8 @@ Route::group(['prefix' => 'api', 'middleware' => 'oauth', 'as' => 'api.'], funct
         return 'hello world';
     });
 
+    Route::get('authenticated', 'Api\Client\ClientController@authenticated');
+
     Route::group(['prefix' => 'client','middleware' => 'oauth.checkrole:client', 'as' => 'client.'], function() {
 
         Route::resource('order',

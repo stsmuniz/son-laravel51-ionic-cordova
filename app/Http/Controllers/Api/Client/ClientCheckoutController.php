@@ -6,10 +6,8 @@ namespace CodeDelivery\Http\Controllers\Api\Client;
 use CodeDelivery\Http\Controllers\Controller;
 use CodeDelivery\Http\Requests\CheckoutRequest;
 use CodeDelivery\Repositories\OrderRepository;
-use CodeDelivery\Repositories\ProductRepository;
 use CodeDelivery\Repositories\UserRepository;
 use CodeDelivery\Services\OrderService;
-use Illuminate\Http\Request;
 use LucaDegasperi\OAuth2Server\Facades\Authorizer;
 
 class ClientCheckoutController extends Controller
@@ -42,6 +40,7 @@ class ClientCheckoutController extends Controller
     public function index()
     {
         $id = Authorizer::getResourceOwnerId();
+        dd($id);
         $clientId = $this->userRepository->find($id)->client->id;
         $orders = $this->orderRepository->with(['items'])->scopeQuery(function ($query) use($clientId) {
             return $query->where('client_id', '=', $clientId);
