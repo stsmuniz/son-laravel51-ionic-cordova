@@ -16,6 +16,13 @@ class Order extends Model implements Transformable
         'total',
         'status'
     ];
+    public function transform()
+    {
+        return [
+            'order' => $this->id,
+            'order_items' => $this->items
+        ];
+    }
 
     public function client()
     {

@@ -89,6 +89,11 @@ Route::group(['prefix' => 'api', 'middleware' => 'oauth', 'as' => 'api.'], funct
             'Api\Deliveryman\DeliverymanCheckoutController', [
                 'except' => ['create', 'edit', 'destroy', 'store']
             ]);
+
+        Route::patch('order/{id}/update-status', [
+            'uses' => 'Api\Deliveryman\DeliverymanCheckoutController@updateStatus',
+            'as' => 'orders.update_status'
+        ]);
     });
 });
 
