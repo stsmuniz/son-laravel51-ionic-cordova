@@ -203,11 +203,11 @@
   <component name="ExecutionTargetManager" SELECTED_TARGET="default_target" />
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="ClientCheckoutController.php" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/app/Http/Controllers/Api/Client/ClientCheckoutController.php">
+      <file leaf-file-name="CheckoutRequest.php" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/app/Http/Requests/CheckoutRequest.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="480">
-              <caret line="59" column="22" lean-forward="true" selection-start-line="59" selection-start-column="22" selection-end-line="59" selection-end-column="22" />
+            <state relative-caret-position="40">
+              <caret line="2" column="36" lean-forward="false" selection-start-line="2" selection-start-column="36" selection-end-line="2" selection-end-column="36" />
               <folding />
             </state>
           </provider>
@@ -303,8 +303,8 @@
         <option value="$PROJECT_DIR$/app/Models/Order.php" />
         <option value="$PROJECT_DIR$/app/Repositories/OrderRepositoryEloquent.php" />
         <option value="$PROJECT_DIR$/app/Transformers/OrderTransformer.php" />
-        <option value="$PROJECT_DIR$/app/Http/Requests/CheckoutRequest.php" />
         <option value="$PROJECT_DIR$/app/Http/Controllers/Api/Client/ClientCheckoutController.php" />
+        <option value="$PROJECT_DIR$/app/Http/Requests/CheckoutRequest.php" />
       </list>
     </option>
   </component>
@@ -341,7 +341,6 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scratches" />
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -494,6 +493,7 @@
           </PATH>
         </subPane>
       </pane>
+      <pane id="Scratches" />
       <pane id="Scope" />
     </panes>
   </component>
@@ -620,11 +620,12 @@
       <workItem from="1495476832302" duration="55000" />
       <workItem from="1495477199807" duration="4851000" />
       <workItem from="1495552068365" duration="1505000" />
+      <workItem from="1495563784392" duration="704000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="110128000" />
+    <option name="totallyTimeSpent" value="110832000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
@@ -923,7 +924,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="280">
           <caret line="14" column="4" lean-forward="false" selection-start-line="14" selection-start-column="4" selection-end-line="14" selection-end-column="4" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -931,12 +931,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="320">
           <caret line="16" column="1" lean-forward="true" selection-start-line="16" selection-start-column="1" selection-end-line="16" selection-end-column="1" />
-          <folding>
-            <marker date="1490784581000" expanded="true" signature="47:115" ph=" Class TransformableTrait ..." />
-            <marker date="1490784581000" expanded="true" signature="142:261" ph="{...}" />
-            <marker date="1490784581000" expanded="true" signature="153:180" ph=" @return array ..." />
-            <marker date="1490784581000" expanded="true" signature="214:259" ph="{...}" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -944,7 +938,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="280">
           <caret line="14" column="30" lean-forward="true" selection-start-line="14" selection-start-column="30" selection-end-line="14" selection-end-column="30" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -961,7 +954,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="226">
           <caret line="248" column="14" lean-forward="true" selection-start-line="248" selection-start-column="14" selection-end-line="248" selection-end-column="14" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -969,22 +961,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="401">
           <caret line="51" column="57" lean-forward="true" selection-start-line="51" selection-start-column="57" selection-end-line="51" selection-end-column="57" />
-          <folding>
-            <marker date="1495141383084" expanded="false" signature="49:295" ph="..." />
-            <marker date="1495141383084" expanded="true" signature="300:384" ph=" Class OrderRepositoryEloquent ..." />
-            <marker date="1495141383084" expanded="true" signature="945:954" ph="{...}" />
-            <marker date="1495141383084" expanded="true" signature="569:937" ph="{...}" />
-            <marker date="1495141383084" expanded="true" signature="647:735" ph="..." />
-            <marker date="1495141383084" expanded="true" signature="648:734" ph="..." />
-            <marker date="1495141383084" expanded="true" signature="797:905" ph="..." />
-            <marker date="1495141383084" expanded="true" signature="831:894" ph="..." />
-            <marker date="1495141383084" expanded="true" signature="848:893" ph="..." />
-            <marker date="1495141383084" expanded="true" signature="946:1013" ph=" Specify Model class name ..." />
-            <marker date="1495141383084" expanded="true" signature="1043:1084" ph="{...}" />
-            <marker date="1495141383084" expanded="true" signature="1093:1147" ph=" Boot up the repository, pushing criteria ..." />
-            <marker date="1495141383084" expanded="true" signature="1176:1246" ph="{...}" />
-            <marker date="1495141383084" expanded="true" signature="945:952" ph="{...}" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -992,20 +968,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="481">
           <caret line="58" column="42" lean-forward="true" selection-start-line="58" selection-start-column="42" selection-end-line="58" selection-end-column="42" />
-          <folding>
-            <marker date="1495141383084" expanded="false" signature="70:324" ph="..." />
-            <marker date="1495141383084" expanded="true" signature="380:1434" ph="{...}" />
-            <marker date="1495141383084" expanded="true" signature="391:425" ph=" @var OrderRepository ..." />
-            <marker date="1495141383084" expanded="true" signature="460:493" ph=" @var UserRepository ..." />
-            <marker date="1495141383084" expanded="true" signature="532:563" ph=" @var OrderService ..." />
-            <marker date="1495141383084" expanded="true" signature="739:886" ph="{...}" />
-            <marker date="1495141383084" expanded="true" signature="915:1190" ph="{...}" />
-            <marker date="1495141383084" expanded="true" signature="1040:1145" ph="..." />
-            <marker date="1495141383084" expanded="true" signature="1068:1144" ph="..." />
-            <marker date="1495141383084" expanded="true" signature="1221:1237" ph="{...}" />
-            <marker date="1495141383084" expanded="true" signature="1424:1431" ph="{...}" />
-            <marker date="1495141383084" expanded="true" signature="1612:1649" ph="..." />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -1053,7 +1015,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-419">
           <caret line="4" column="0" lean-forward="false" selection-start-line="4" selection-start-column="0" selection-end-line="4" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1091,18 +1052,30 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/Http/Requests/CheckoutRequest.php">
+    <entry file="file://$PROJECT_DIR$/app/Http/Controllers/Api/Client/ClientCheckoutController.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="620">
-          <caret line="31" column="0" lean-forward="false" selection-start-line="31" selection-start-column="0" selection-end-line="31" selection-end-column="0" />
-          <folding />
+        <state relative-caret-position="281">
+          <caret line="55" column="39" lean-forward="true" selection-start-line="55" selection-start-column="39" selection-end-line="55" selection-end-column="39" />
+          <folding>
+            <marker date="1495142085748" expanded="false" signature="65:338" ph="..." />
+            <marker date="1495142085748" expanded="true" signature="389:1827" ph="{...}" />
+            <marker date="1495142085748" expanded="true" signature="400:434" ph=" @var OrderRepository ..." />
+            <marker date="1495142085748" expanded="true" signature="474:507" ph=" @var UserRepository ..." />
+            <marker date="1495142085748" expanded="true" signature="546:577" ph=" @var OrderService ..." />
+            <marker date="1495142085748" expanded="true" signature="753:900" ph="{...}" />
+            <marker date="1495142085748" expanded="true" signature="929:1272" ph="{...}" />
+            <marker date="1495142085748" expanded="true" signature="1120:1227" ph="..." />
+            <marker date="1495142085748" expanded="true" signature="1154:1226" ph="..." />
+            <marker date="1495142085748" expanded="true" signature="1325:1670" ph="{...}" />
+            <marker date="1495142085748" expanded="true" signature="1701:1824" ph="{...}" />
+          </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/Http/Controllers/Api/Client/ClientCheckoutController.php">
+    <entry file="file://$PROJECT_DIR$/app/Http/Requests/CheckoutRequest.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="480">
-          <caret line="59" column="22" lean-forward="true" selection-start-line="59" selection-start-column="22" selection-end-line="59" selection-end-column="22" />
+        <state relative-caret-position="40">
+          <caret line="2" column="36" lean-forward="false" selection-start-line="2" selection-start-column="36" selection-end-line="2" selection-end-column="36" />
           <folding />
         </state>
       </provider>
