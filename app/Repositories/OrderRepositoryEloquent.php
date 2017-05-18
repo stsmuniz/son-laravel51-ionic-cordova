@@ -15,6 +15,8 @@ use CodeDelivery\Validators\OrderValidator;
  */
 class OrderRepositoryEloquent extends BaseRepository implements OrderRepository
 {
+    protected $skipPresenter = true;
+
     public function getByIdAndDeliveryman($id, $deliverymanId)
     {
         $result = $this->with(['client', 'items', 'cupom'])->findWhere([
