@@ -12,7 +12,7 @@ use CodeDelivery\Models\Order;
 class OrderTransformer extends TransformerAbstract
 {
     protected $availableIncludes = [
-        'cupom','items'
+        'cupom','items', 'client'
     ];
 
     /**
